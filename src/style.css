@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base theme styles */
+@layer base {
+  :root {
+    --color-bg-primary: 255 255 255;
+    --color-bg-secondary: 249 250 251;
+    --color-text-primary: 17 24 39;
+    --color-text-secondary: 107 114 128;
+    --color-border: 229 231 235;
+  }
+
+  .dark {
+    --color-bg-primary: 17 24 39;
+    --color-bg-secondary: 31 41 55;
+    --color-text-primary: 249 250 251;
+    --color-text-secondary: 156 163 175;
+    --color-border: 55 65 81;
+  }
+}
+
+/* Product Customizer Specific Styles */
+.product-customizer {
+  @apply font-sans;
+}
+
+.product-customizer .option-group+.option-group {
+  @apply mt-6 pt-6 border-t border-gray-200 dark:border-gray-800;
+}
+
+/* Canvas renderer */
+.product-customizer canvas {
+  @apply w-full h-full touch-none outline-none;
+}
+
+/* Slider styles */
+.product-customizer input[type="range"] {
+  @apply w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer;
+}
+
+.product-customizer input[type="range"]::-webkit-slider-thumb {
+  @apply appearance-none w-6 h-6 rounded-full bg-primary-600 cursor-pointer;
+}
+
+/* Loading state */
+.product-customizer .loading {
+  @apply flex items-center justify-center h-full w-full;
+}
+
+.product-customizer .loading-spinner {
+  @apply animate-spin h-10 w-10 border-4 border-primary-500 rounded-full border-t-transparent;
+}

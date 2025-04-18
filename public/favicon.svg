@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 3D cube icon -->
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="#e0f2fe"></rect>
+  <path d="M12 8L21 12L12 16L3 12L12 8Z" fill="#0ea5e9"></path>
+  <path d="M12 3V8"></path>
+  <path d="M12 16V21"></path>
+  <path d="M21 12V19"></path>
+  <path d="M3 12V19"></path>
+</svg> 
